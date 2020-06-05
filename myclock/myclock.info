@@ -1,0 +1,6 @@
+{
+	"name":"My Clock",
+	"type":"clock",
+	"src":"myclock.app.js",
+	"icon":"myclock.img"
+}
