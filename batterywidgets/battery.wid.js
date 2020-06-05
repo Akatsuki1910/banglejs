@@ -1,26 +1,25 @@
 // WIDGETS = {};
-
+require("FontTeletext10x18Ascii").add(Graphics);
 (() => {
   var width = 24;
 
   function draw() {
-    var date = new Date();
     g.reset();
     g.setFontAlign(0, 0);
     var text = E.getBattery();
-    g.setFont("6x8");
-    g.drawString(text, this.x + width / 2, this.y + 19);
+    g.setFont("Teletext10x18Ascii");
+    g.drawString(text, this.x + width / 2, this.y + 15);
   }
 
   setInterval(function () {
-    WIDGETS["date"].draw(WIDGETS["date"]);
+    WIDGETS.date.draw(WIDGETS.date);
   }, 10 * 60000);
 
-  WIDGETS["date"] = {
+  WIDGETS.date = {
     area: "tr",
     width: width,
     draw: draw
   };
-})()
+})();
 
 // Bangle.drawWidgets();
