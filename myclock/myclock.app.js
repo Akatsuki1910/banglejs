@@ -7,7 +7,7 @@ function draw() {
   var d = new Date();
   var h = d.getHours(),
     m = d.getMinutes();
-  var time = (" " + h).substr(-2) + ":" + ("0" + m).substr(-2);
+  var time = ("  " + h).substr(-2) + ":" + ("0" + m).substr(-2);
   g.reset();
   g.setFont("7x11Numeric7Seg", 6);
   g.setFontAlign(1, 1);
