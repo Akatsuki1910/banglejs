@@ -7,7 +7,7 @@ require("FontTeletext10x18Ascii").add(Graphics);
   function draw() {
     g.reset();
     g.setFontAlign(0, 0);
-    var text = E.getBattery();
+    var text = (" " + E.getBattery()).slice(-3);
     g.setFont("Teletext10x18Ascii");
     g.drawString(text, this.x + width / 2 - 5, this.y + 15, true);
   }
