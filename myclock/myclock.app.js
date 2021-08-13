@@ -4,10 +4,10 @@ const X = 210,
   Y = 140;
 
 function draw() {
-  var d = new Date();
-  var h = d.getHours(),
+  const d = new Date();
+  const h = d.getHours(),
     m = d.getMinutes();
-  var time = ("  " + h).substr(-2) + ":" + ("0" + m).substr(-2);
+  const time = ("  " + h).substr(-2) + ":" + ("0" + m).substr(-2);
   g.reset();
   g.setFont("7x11Numeric7Seg", 6);
   g.setFontAlign(1, 1);
@@ -16,10 +16,11 @@ function draw() {
   g.drawString(("0" + d.getSeconds()).substr(-2), X + 30, Y, true);
   g.setFont("8x16", 2);
   g.setFontAlign(0, 1);
-  var year = d.getFullYear();
-  var month = d.getMonth() + 1;
-  var day = d.getDate();
-  var dateStr = year + " " + month + "/" + day;
+  const year = d.getFullYear();
+  const month = d.getMonth() + 1;
+  const day = d.getDate();
+  const week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][d.getDay()];
+  const dateStr = year + " " + month + "/" + day + " " + week;
   g.drawString(dateStr, g.getWidth() / 2, Y + 40, true);
 }
 
