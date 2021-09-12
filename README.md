@@ -5,6 +5,7 @@ Bangle.js 用のアプリ＆ウェジット置き場
 [espruino/BangleApps](https://github.com/espruino/BangleApps)
 
 <https://www.espruino.com/Bangle.js+Data+Streaming>
+<https://www.espruino.com/ide/>
 
 ## batterywidgets
 

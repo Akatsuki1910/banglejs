@@ -10,11 +10,16 @@
     "fix": "npm i --package-lock-only && npm audit fix && rm yarn.lock && yarn import && rm package-lock.json"
   },
   "dependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^6.0.1",
+    "ace-builds": "^1.4.12",
     "core-js": "^3.17.3",
     "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
+    "nuxt-property-decorator": "^2.9.1",
     "prettier": "^2.4.0",
     "pug": "^3.0.2",
     "pug-loader": "^2.4.0",
